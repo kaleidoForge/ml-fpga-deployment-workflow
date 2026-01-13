@@ -1,4 +1,4 @@
-# ml-fpga-deployment-workflow
+# ML-FPGA Deployment Workflow
 
 Official repository of the paper: "Holistic Edge AI: From ML Models to Hardware-Aware Deployment". EDUCON2026
 
