@@ -1,6 +1,7 @@
-# Hello World from Zynq!
 
 ![alt text](../img/general/header_workflow.png)
+
+# Hello World from Zynq
 
 ### 1.1. Introduction
 
