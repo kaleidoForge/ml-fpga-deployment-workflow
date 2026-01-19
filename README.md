@@ -72,3 +72,86 @@ If you are using **Visual Studio Code**:
 > **Note:**  
 > If you are using a different Jupyter interface, simply select `neuralEnv10`
 > as the active kernel. The workflow and results will be the same.
+
+
+#  General Workflow Guide
+Throughout the course, students will follow a complete end-to-end workflow that transforms a trained neural network model into a hardware accelerator running on the AMD AUP-ZU3 platform. Although each case study focuses on a specific architecture (MLP, CNN, RNN), the overall process remains consistent. This section provides a high-level guide to the major stages and the corresponding Jupyter notebooks or tools used in each step.
+
+## 1. Model Training
+
+The workflow begins with training the neural network using the provided Jupyter notebooks.
+
+This stage includes:
+
+- Dataset loading and preprocessing.
+
+- Model definition and training.
+
+- Modle performance evaluation.
+
+- Saving outputs in a standardized format (model.h5). 
+
+These files serve as the inputs for later compression and hardware translation.
+
+## 2. Model Compression
+
+Next, optional compression techniques are applied to reduce the computational cost and memory footprint of the model:
+
+- Quantization (lower-precision weights and activations).
+
+- Pruning (removal of redundant parameters).
+
+- Knowledge Distillation (training a compact student network).
+
+The corresponding notebook demonstrates how each technique affects accuracy and hardware suitability.
+
+## 3. Hardware Generation with hls4ml
+
+The compressed (or uncompressed) model is then converted into synthesizable hardware using hls4ml.
+
+This stage covers:
+
+- Creating an hls4ml configuration from model.h5.
+
+- Adjusting reuse factors and precision settings.
+
+- Generating C++ project files compatible with Vitis HLS.
+
+- Running C-synthesis, and exporting the IP core.
+
+The notebook guides the process and produces an IP block ready for integration in Vivado.
+
+## 4. Vivado Block Design
+
+In this step, a reusable block design is created, that integrates:
+
+- The hls4ml-generated IP core.
+
+- AXI DMA for data movement.
+
+- Clocking and reset infrastructure.
+
+- Connections to the Zynq processing system.
+
+Only the accelerator IP changes between case studies; the rest of the design remains common.
+
+A reference Vivado project and build script are provided to streamline this process.
+
+## 5. Deployment and Execution
+
+After hardware generation, the design is deployed onto the target platform for execution and validation.
+
+This stage includes:
+
+- Hardware configuration and programming,
+
+- Interface initialization,
+
+- Data transfer setup,
+
+- Execution of inference workloads,
+
+- Collection of performance and functional metrics.
+
+To simplify this process, deployment templates are provided, offering a standardized structure for hardware initialization, data movement, and inference execution.
+These templates ensure reproducibility and reduce the effort required to deploy models across different platforms and experiments.
