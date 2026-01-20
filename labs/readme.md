@@ -122,9 +122,8 @@ The *build_accel.tcl* script defines the complete HLS build process: itcreates a
 ![alt text](../img/components/block-design.png)
 ### Template Vivado Project - ComBlock
 
-![alt text](img/components/block-design.png)
-
-
+![alt text](../img/components/bd_comblock.png
+)
 ### 5. PYNQ-based Evaluation Template
 
 A unified evaluation workflow is used throughout the projects to validate the hardware accelerators generated for the MLP, CNN, and RNN case studies. Although each model produces a different IP core, the interaction with the FPGA platform follows the same structure, implemented through a reusable PYNQ template provided in the practical sessions.
