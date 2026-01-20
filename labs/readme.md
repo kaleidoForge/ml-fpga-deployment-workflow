@@ -1,4 +1,4 @@
-# Laboratory descriptions
+# Laboratory overview
 
 ## Common Components of the DNN-to-FPGA Workflow 
 
