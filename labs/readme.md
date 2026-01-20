@@ -15,7 +15,7 @@ Neural networks are composed of parameters and hyperparameters. Parameters are l
 
 The main steps involved in the training and testing process are illustrated in the following image, along with their corresponding functions.
 
-![alt text](img/General/steps_ml.png)
+![alt text](../img/components/steps_ml.png)
 
 The first two steps focus on defining the hyperparameters and setting up the machine learning architecture. Subsequently, a model summary helps review how the model was built.
 
