@@ -122,12 +122,11 @@ The *build_accel.tcl* script defines the complete HLS build process: itcreates a
 ![alt text](../img/components/block-design.png)
 ### Template Vivado Project - ComBlock
 
-![alt text](../img/components/bd_comblock.png
-)
-### 5. PYNQ-based Evaluation Template
+![alt text](../img/components/bd_comblock.png)
+
+### 5. Python-based Evaluation Template
 
 A unified evaluation workflow is used throughout the projects to validate the hardware accelerators generated for the MLP, CNN, and RNN case studies. Although each model produces a different IP core, the interaction with the FPGA platform follows the same structure, implemented through a reusable PYNQ template provided in the practical sessions.
 
 Once the bitstream and hardware design are loaded as an overlay, the accelerator becomes accessible through Python, along with the AXI DMA engine responsible for streaming input and output tensors between the processing system (PS) and the programmable logic (PL). The dataset used for verification is then prepared in the appropriate numerical format, such as fixed-point representations for quantized models, and transferred to the accelerator. After computation is triggered, the results are retrieved from the DMA receive channel and compared with software-generated references to assess correctness.
 
-This template also supports the evaluation of key performance metrics, allowing consistent benchmarking across all network architectures. By abstracting common tasks—overlay loading, DMA setup, IP interaction, dataset handling, and metric collection, the PYNQ workflow provides a unified and reusable foundation for all experiments. Students can therefore focus on the behavior and performance of each accelerator, without re-implementing platform-level routines. The detailed step-by-step implementation and code examples are provided separately in the repository.
