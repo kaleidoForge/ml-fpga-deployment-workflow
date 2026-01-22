@@ -155,3 +155,8 @@ This stage includes:
 
 To simplify this process, deployment templates are provided, offering a standardized structure for hardware initialization, data movement, and inference execution.
 These templates ensure reproducibility and reduce the effort required to deploy models across different platforms and experiments.
+
+
+# Presentations
+
+**Link:** https://dbox.ictp.it/s/ySDsRzqdZLz2ntw
