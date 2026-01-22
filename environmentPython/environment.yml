@@ -1,4 +1,4 @@
-name: ml-fpga
+name: neuralEnv10
 channels:
   - conda-forge
 dependencies:
