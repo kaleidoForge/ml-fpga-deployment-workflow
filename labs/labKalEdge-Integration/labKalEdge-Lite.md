@@ -218,11 +218,7 @@ The final hardware is presented in the following Figure.
 | Jupyter Notebook | `ml-fpga-deployment-workflow/labs/labKalEdge-Integration/src` | Executes inference and evaluates performance metrics. |
 
 
-> Note 1: 
-> The provided `.xsa` files allow users to complete the laboratory even if Vivado is not installed locally.  
-> This enables a lightweight workflow focused on deployment and evaluation.
-
-> Note 2:
+> Note:
 > If you are unable to generate the `.xsa` file locally (for example, due to the absence of Vivado), a pre-generated version is provided.
 >  
 > The file can be found in:
