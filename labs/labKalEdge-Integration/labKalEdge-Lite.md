@@ -36,7 +36,7 @@ Before starting, make sure you have:
 
 Open **KalEdge-Lite** using the following link:
 
-https://kaledge-lite-64594466260.europe-west1.run.app
+
 
 ---
 
@@ -55,7 +55,7 @@ This dataset corresponds to the **gamma/neutron discrimination system**.
 
 Once loaded, you should see a window similar to the one shown below.
 
-![alt text](../../img/kalEdgeLite/dataset.png)
+![alt text](../img/kalEdgeLite/dataset.png)
 
 ---
 
@@ -139,7 +139,7 @@ Configure the following:
 
 5. **I/O type**: io_parallel
 
-![alt text](../../img/kalEdgeLite/hls4ml-Export.png)
+![alt text](../img/kalEdgeLite/hls4ml-Export.png)
 
 ---
 
@@ -196,7 +196,7 @@ This step makes the ComBlock IP available for integration during the FPGA build 
 
 The final hardware is presented in the following Figure. 
 
-![alt text](../../../img/components/bd_comblock.png)
+![alt text](../../img/components/bd_comblock.png)
 
 ## Interaction with the HyperFPGA
 
