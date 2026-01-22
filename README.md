@@ -32,13 +32,13 @@ This step creates and activates the *Conda* environment required for the project
 
 ```bash
 # Create the environment
-conda env create -f environmentPython/environment.yaml
+conda env create -f environmentPython/environment.yml
 conda activate neuralEnv10
 ```
 
 
 conda env create -f environmentPython/environment.yaml
-The command `conda env create -f /environment.yaml` reads the `environment.yaml` file and installs all the specified dependencies into a new Conda environment called `neuralEnv10`.
+The command `conda env create -f /environment.yml` reads the `environment.yml` file and installs all the specified dependencies into a new Conda environment called `neuralEnv10`.
 
 Once the installation is complete, `conda activate neuralEnv10` activates the environment so that all subsequent commands run with the correct versions of Python and the required libraries.
 
