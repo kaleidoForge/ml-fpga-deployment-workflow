@@ -115,6 +115,9 @@ Once finished:
 - A message **“Report generated”** will appear.
 - Navigate to the **Reports & Export** tab. In this section, you can inspect the generated report. 
 
+![alt text](../img/kalEdgeLite/report.png)
+
+
 ---
 
 ### 9. HLS Integration
@@ -156,6 +159,8 @@ Wait until the conversion process finishes.
 ### 12. Visualization
 
 Click **Show Confusion Matrix** to visualize the classification performance.
+
+![alt text](../img/kalEdgeLite/cm.png)
 
 ---
 
