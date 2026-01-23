@@ -3,10 +3,10 @@
 ## Context
 - **Location:** Bariloche, Río Negro, Argentina
 - **Duration:** One-week intensive workshop (Total: 16hs)
-- **Audience:** 14 participants
-- **Format:** 
-- **Enrollment:** 
-- **Funding:** This course instance was supported by Emtech (Argentina)
+- **Audience:** Undergraduate and postgraduate students, researchers, and industry professionals
+- **Format:** In-person 
+- **Enrollment:** 17 participants
+- **Funding:** This course instance was supported by Emtech (Argentina) and Instituto Balseiro (Argentina)
 
 ## Educational Focus
 This edition emphasized the end-to-end workflow from ML model design to FPGA deployment, with a strong focus on:
@@ -19,13 +19,14 @@ This edition emphasized the end-to-end workflow from ML model design to FPGA dep
 - System-level design considerations (power, signal integrity, EMC)
 
 ## Hardware and Tooling
-- **FPGA platforms:** PYNQ-Z1, RedPitaya, HyperFPGA
-- **Toolchain:** Vivado HLS, Vivado, Python-based ML stack, PYNQ
+- **FPGA platforms:** HyperFPGA (FPGA cluster)
+- **Toolchain:** Vivado HLS, Vivado, Python-based ML stack
 - **Deployment scope:** Single-board FPGA inference (educational reference)
 
 ## Labs and Demos Used
 This course instance used the following modules from the repository:
 - `labs`:  `lab01`, `lab02`
+- `automate`
 - `demos`
 - `KalEdge-Lite`
 
