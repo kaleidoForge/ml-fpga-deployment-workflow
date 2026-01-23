@@ -29,12 +29,25 @@ Before starting, make sure you have:
   - Model training
   - FPGA-based acceleration
 
+---
+### For this laboratory, there are several possible ways to proceed depending on your setup:
+
+- **Using the KalEdge-Lite workflow**, following the complete end-to-end process.
+
+- **Starting from an hls4ml-generated project**, in which case you can directly proceed to the corresponding section (Automate IP core generation and hardware creation). 
+
+- **Without Vivado installed**, by using the provided `.xsa` files and going directly to the indicated section (Interaction with the HyperFPGA).
+---
+
+## Laboratory Workflow Overview
+
+The following diagram summarizes the different execution paths available for this laboratory, depending on the user setup and available tools.
 
 ---
 
 ### 1. Launch the Application
 
-Open **KalEdge-Lite** using the following link:
+Open **KalEdge-Lite** using the following link: https://kaledge-lite-64594466260.europe-west1.run.app/
 
 
 
@@ -189,6 +202,7 @@ The generated `.xsa` file will later be uploaded to the HyperFPGA platform for h
 >
 > **If the board files are not installed, Vivado will not recognize the target FPGA board and the TCL script will fail.**
 
+**Provided hls projects can be found in the folder `/ml-fpga-deployment-workflow/labs/labKalEdge-Integration/hls_prj`**
 
 1. Navigate to the `scripts/automate` directory within the cloned repository.
 2. Open the `hw_tcl.ipynb` notebook.
