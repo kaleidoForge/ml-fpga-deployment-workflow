@@ -346,7 +346,7 @@ At this point your hardware design and configuration are set and you can proceed
 > The file can be found in:
 >
 > ```
-> ml-fpga-deployment-workflow/labs/labKalEdge-Integration
+> ml-fpga-deployment-workflow/labs/labKalEdge-Integration/xsa
 > ```
 >
 > This allows you to continue with the laboratory without running the HLS or Vivado flow.
