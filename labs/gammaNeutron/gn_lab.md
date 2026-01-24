@@ -110,9 +110,6 @@ The verification of the IP's functionality is performed using the Vitis HLS tool
     - Leave the Flow Target as **Vivado IP Flow Target**. 
     - Click **OK**. 
 
-The configuration should be as shown in the image below.
-
-![HLS solution settings](../img/lab_gammaNeutron/part2/solSettings.png){width=70%}
 
 🔴 In this step, **several parts of the code need to be added or replaced**. 
 
@@ -291,9 +288,17 @@ cd labs/lab_gammaNeutron/partB/bd/
 
 4. A TCL file can be sourced from Vivado. To recreate the block design you will need a `tcl` command file, that in this case is **bd_gn_inference.tcl**. To recreate the block design, type in the Tcl console:
 
+**For The HyperFPGA 3be11:**
+
 ``` bash
-source ./bd_gnDiscriminator.tcl
+source ./gn_3be11.tcl
 ```
+
+**For The HyperFPGA 4eg21:**
+``` bash
+source ./gn_4eg21.tcl
+```
+
 
 >**Note:** When you trigger the execution of a Tcl script in the Vivado, a progress bar appears, and all operations within Vivado are halted until the script ends running.
 
