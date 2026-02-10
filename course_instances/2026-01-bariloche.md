@@ -15,7 +15,7 @@ This edition emphasized the end-to-end workflow from ML model design to FPGA dep
 - High-Level Synthesis for ML inference
 - SoC/FPGA deployment
 - KalEdge-Lite presentation
-- Case studies: focused on gamam/nuetron discrimination and pile-up rejection
+- Case studies
 - System-level design considerations (power, signal integrity, EMC)
 
 ## Hardware and Tooling
